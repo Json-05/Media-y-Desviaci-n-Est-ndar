@@ -1,12 +1,12 @@
-/* --- Variables CSS: Define la paleta de colores y estilos --- */
+
 :root {
-    --color-primary: #007bff; /* Azul brillante, profesional */
-    --color-secondary: #6c757d; /* Gris para texto y bordes */
-    --color-background: #f8f9fa; /* Fondo muy claro */
-    --color-card-bg: #ffffff; /* Fondo de las tarjetas/secciones */
-    --color-error: #dc3545; /* Rojo para errores */
+    --color-primary: #007bff; 
+    --color-secondary: #6c757d; 
+    --color-background: #f8f9fa; 
+    --color-card-bg: #ffffff; 
+    --color-error: #dc3545; 
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --shadow-subtle: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    --shadow-subtle: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); 
     --border-radius: 8px;
 }
 
@@ -23,7 +23,7 @@ body {
 
 main {
     width: 100%;
-    max-width: 650px; /* Ancho máximo para mejor lectura */
+    max-width: 650px; 
 }
 
 h1 {
@@ -55,7 +55,6 @@ h2 {
 /* --- Entradas de Datos --- */
 #inputs-container {
     display: grid;
-    /* Ajusta el número de columnas de forma responsiva */
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); 
     gap: 15px;
     margin: 20px 0;
@@ -68,7 +67,7 @@ h2 {
     border-radius: 5px;
     text-align: center;
     transition: border-color 0.3s, box-shadow 0.3s;
-    box-sizing: border-box; /* Asegura que el padding no desborde */
+    box-sizing: border-box; 
 }
 
 .entrada:focus {
@@ -109,7 +108,7 @@ button {
 }
 
 #btn-calcular:not(:disabled):hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    background-color: #0056b3; 
 }
 
 /* Botón Reiniciar (Secundario) */
@@ -129,14 +128,14 @@ button:disabled {
 
 /* --- Resultados --- */
 #resultados {
-    padding-bottom: 5px; /* Ajuste para el espacio */
+    padding-bottom: 5px;
 }
 
 #resultados p {
     font-size: 1.1em;
     margin: 10px 0;
     padding: 8px 0;
-    display: flex; /* Uso de Flexbox para alinear etiqueta y valor */
+    display: flex; 
     justify-content: space-between;
     border-bottom: 1px dashed #e9ecef;
 }
@@ -154,7 +153,7 @@ button:disabled {
 
 /* Estilo para los nombres de las métricas (si es necesario) */
 #resultados p:before {
-    content: attr(data-label); /* Necesitaría un pequeño cambio en el HTML para esto */
+    content: attr(data-label);
     font-weight: 400;
     color: var(--color-secondary);
 }
